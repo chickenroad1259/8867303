@@ -3,43 +3,80 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Join Our Telegram Channel</title>
+  <title>Join Rummy Grand on Telegram</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
       background: linear-gradient(135deg, #0088cc, #005f8d);
       color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
       text-align: center;
-      padding: 50px;
+    }
+    .container {
+      animation: fadeIn 1.5s ease-in-out;
+      max-width: 500px;
+    }
+    img.logo {
+      width: 200px;
+      height: auto;
+      margin-bottom: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
     }
     h1 {
-      font-size: 2.5em;
-      margin-bottom: 20px;
+      font-size: 2em;
+      margin-bottom: 10px;
     }
     p {
-      font-size: 1.2em;
-      margin-bottom: 40px;
+      font-size: 1.1em;
+      margin-bottom: 30px;
     }
     a {
-      display: inline-block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
       background: white;
       color: #0088cc;
       padding: 15px 30px;
-      border-radius: 30px;
+      border-radius: 50px;
       font-size: 1.2em;
-      text-decoration: none;
       font-weight: bold;
-      transition: background 0.3s, color 0.3s;
+      text-decoration: none;
+      transition: all 0.3s ease;
     }
     a:hover {
       background: #005f8d;
       color: white;
     }
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
   </style>
 </head>
 <body>
-  <h1>Join Our Telegram Channel</h1>
-  <p>Click below to connect with us and stay updated.</p>
-  <a href="https://t.me/+rpRAEXMxabEwMWQ1" target="_blank">Join on Telegram</a>
+  <div class="container">
+    <img src="Grand.png" alt="Rummy Grand Logo" class="logo">
+    <h1>Join Rummy Grand on Telegram</h1>
+    <p>Get the latest updates, tips, and bonuses from Rummy Grand.</p>
+    <a href="https://t.me/+rpRAEXMxabEwMWQ1" target="_blank">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="#0088cc" viewBox="0 0 24 24">
+        <path d="M9.999 15.17l-0.198 2.789c0.283 0 0.405-0.122 0.554-0.267l1.332-1.282 2.765 2.026c0.507 0.281 0.869 0.133 1.003-0.47l1.815-8.505c0.185-0.841-0.305-1.168-0.829-0.963l-10.618 4.1c-0.725 0.283-0.714 0.684-0.123 0.864l2.726 0.851 6.331-3.993c0.298-0.187 0.57-0.084 0.346 0.103l-5.23 4.957z"/>
+      </svg>
+      Join on Telegram
+    </a>
+  </div>
 </body>
 </html>
